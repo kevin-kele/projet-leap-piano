@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #222
+}
+
+ul {
+    height: 20.875em;
+    width: 61em;
+    margin: 5em auto;
+    padding: 0em 0 0 36px;
+    position: relative;
+    border: 1px solid #160801;
+    border-radius: 1em;
+    box-shadow: 0 0 50px rgba(210, 192, 192, 0.5) inset, 0 1px rgba(212, 149, 119, 0.2) inset, 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: left
+}
+
+.blackk {
+    height: 8em;
+    width: 2em;
+    margin: 0px 0 0 -9em;
+    z-index: 2;
+    border: 1px solid #000;
+    border-radius: 0 0 3px 3px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #222 0%, #555 100%);
+    margin-top: 13px;
+}
+
+ul .white {
+    height: 16em;
+    width: 8em;
+    z-index: 1;
+    border-left: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    border-radius: 0 0 13px 15px;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #ccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+    margin-top: 15px;
+}
+
+.black {
+    height: 8em;
+    width: 2em;
+    margin: 0 2px 0 -1em;
+    z-index: 2;
+    border: 1px solid #000;
+    border-radius: 0 0 3px 3px;
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #222 0%, #555 100%);
+    margin-top: 13px;
+    position: absolute;
+    display: flex;
+    margin-left: 47em;
+}
+
+.black:active {
+    box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #444 0%, #222 100%)
+}
+
+.b {
+    margin-right: -10px;
+}
+
+.as {
+    margin-left: 7em;
+}
+
+.gs {
+    margin-left: 15em;
+}
+
+.ds {
+    margin-left: 39em;
+}
+
+.cs {
+    margin-left: 47em;
+}
+
+ul li:first-child {
+    border-radius: 5px 0 5px 5px
+}
+
+li.white.b {
+    border-radius: 6px 5px 5px 6px;
+    margin-right: 0px;
+}
+
+ul li:last-child {
+    border-radius: 0 5px 5px 5px
+}
+
+ul .tile-active {
+    animation: tilePressed 200ms;
+}
+
+@keyframes tilePressed {
+    from {
+        /* background: lime; */
+        box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+#titre {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.ligne {
+    /* border-left: 5px solid aliceblue; */
+    /* float: right; */
+    background-color: black;
+    width: 28px;
+    height: 25px;
+    /* width: 50px; */
+    margin-bottom: 30px;
+    /* margin-top: 10px; */
+    position: inherit;
+    border-radius: 5px;
+    box-shadow: 1px aliceblue;
+    box-shadow: 1px 1px 1px 0px aliceblue;
+}
+
+#trai {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    z-index: 1000;
+}
+
+.leap-hover {
+    background-color: orange !important;
+}
+
+#cursor {
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 200;
+}
+
+#effect:hover {
+    background-color: red;
+}
+
+#effect2:hover {
+    background-color: purple;
+}
